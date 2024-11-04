@@ -9,7 +9,7 @@ export const CartItem = ({ data }: Product) => {
             <p className="w-[150px] text-center text-black text-[10px]">{data.name}</p>
 
             {data.descount &&         
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col">
                     <div className="text-[15px] text-[#AAA] line-through">R$ {data.price}</div>
 
                     <div className="text-[15px] text-black font-bold">R$ {data.descount}</div>
