@@ -14,7 +14,7 @@ export const Input = ({label, placeholder, type, value, error, onChange}: Props)
                 <p className="mb-[5px] text-[14px]">{label}</p>
 
                 <input 
-                    className="w-full p-[14px] border border-[#ccc] placeholder-gray-300 outline-none rounded-md"
+                    className="w-full p-[14px] border border-[#AAA] placeholder-gray-400 outline-none rounded-md"
                     type={type}
                     value={value}
                     onChange={e => onChange(e.target.value)}

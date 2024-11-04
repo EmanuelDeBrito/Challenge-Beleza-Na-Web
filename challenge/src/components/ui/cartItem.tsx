@@ -1,14 +1,19 @@
 import { Product } from "@/types/Product";
 import Image from "next/image";
 
-export const CartItem = ({ data }: Product) => {
+type Props = {
+    data: Product,
+    withoutPrice?: boolean
+}
+
+export const CartItem = ({ data, withoutPrice }: Props) => {
     return(
-        <div className="flex justify-between items-center gap-1">
+        <div className="flex justify-between items-center gap-1 mb-5">
             <img src={data.img} alt="" width={50} height={50}/>
 
-            <p className="w-[150px] text-left text-black text-[10px]">{data.name}</p>
+            <p className={`${withoutPrice === true ? 'w-full' : 'w-[150px]'} text-left text-black text-[10px]`}>{data.name}</p>
 
-            {data.descount &&         
+            {data.descount && !withoutPrice &&        
                 <div className="flex flex-col">
                     <div className="text-[15px] text-[#AAA] line-through">R$ {data.price}</div>
 
@@ -16,7 +21,7 @@ export const CartItem = ({ data }: Product) => {
                 </div>
             }
 
-            {!data.descount &&
+            {!data.descount && !withoutPrice &&
                 <div className="text-[15px] color-black font-bold">R$ {data.price}</div>
             }
         </div>
