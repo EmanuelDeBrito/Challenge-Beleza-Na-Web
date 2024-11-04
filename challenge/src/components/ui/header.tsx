@@ -13,10 +13,10 @@ export const Header = () => {
                 <Link href="/cart" onClick={() => setCurrentPage(1)} className={`px-3 py-[11px] text-black border-b-4 ${currentPage === 1 ? 'border-black' : 'border-white'}`}>
                     <li>Sacola</li>
                 </Link>
-                <Link href="/cart" onClick={() => setCurrentPage(2)} className={`px-3 py-[11px] text-black border-b-4 ${currentPage === 2 ? 'border-black' : 'border-white'}`}>
+                <Link href="/payment" onClick={() => setCurrentPage(2)} className={`px-3 py-[11px] text-black border-b-4 ${currentPage === 2 ? 'border-black' : 'border-white'}`}>
                     <li>Pagamento</li>
                 </Link>
-                <Link href="/cart" onClick={() => setCurrentPage(3)} className={`px-3 py-[11px] text-black border-b-4 ${currentPage === 3 ? 'border-black' : 'border-white'}`}>
+                <Link href="/confirmation" onClick={() => setCurrentPage(3)} className={`px-3 py-[11px] text-black border-b-4 ${currentPage === 3 ? 'border-black' : 'border-white'}`}>
                     <li>Confirmação</li>
                 </Link>
             </ul>

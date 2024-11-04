@@ -22,7 +22,7 @@ const Page = () => {
                     <InfoItem labelLeft="Subtotal" labelRight="600,10" bold={true}/>
                 </div>
 
-                <Button label="Finalizar Pedido" black={false}/>
+                <Button label="Seguir para pagamento" black={false}/>
             </Bottom>
         </>
     )

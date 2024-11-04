@@ -6,7 +6,7 @@ export const CartItem = ({ data }: Product) => {
         <div className="flex justify-between items-center gap-1">
             <img src={data.img} alt="" width={50} height={50}/>
 
-            <p className="w-[150px] text-center text-black text-[10px]">{data.name}</p>
+            <p className="w-[150px] text-left text-black text-[10px]">{data.name}</p>
 
             {data.descount &&         
                 <div className="flex flex-col">
